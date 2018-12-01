@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowBackground">@drawable/loading111</item>-->
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+    </style>
+
+    <style name="ActivityBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowEnableSplitTouch">false</item>
+        <!--<item name="android:windowBackground">@drawable/loading111</item>-->
+        <item name="android:splitMotionEvents">false</item>
+    </style>
+
+    <style name="FullScreenTheme" parent="ActivityBaseTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+    </style>
+
+
+
+    <!--沉浸式主题-->
+    <style name="AppTheme.StatusTranslate" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--状态栏透明并且最外层布局顶格，除非使用android:fitsystem="true"-->
+        <item name="android:windowTranslucentStatus" tools:ignore="NewApi">true</item>
+    </style>
+
+    <!--SkidRightLayoutManager-->
+    <style name="AppTheme.Skid_1" parent="AppTheme.StatusTranslate">
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap" tools:targetApi="lollipop">false</item>
+        <item name="android:windowAllowEnterTransitionOverlap" tools:targetApi="lollipop">false</item>
+
+    </style>
+</resources>
